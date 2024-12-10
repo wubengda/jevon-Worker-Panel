@@ -1,4 +1,6 @@
 import { isValidUUID } from "./helpers";
+const defaultProxyIP = 'bpb.yousef.isegaro.com';
+let userID, dohURL, proxyIP, trojanPassword, defaultHttpPorts, defaultHttpsPorts, panelVersion, hostName, origin, client, pathName;
 
 export function initializeParams(request, env) {
     const proxyIPs = env.PROXYIP?.split(',').map(proxyIP => proxyIP.trim());
